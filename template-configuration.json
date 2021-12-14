@@ -9,7 +9,7 @@
     "Capabilities": "CAPABILITY_NAMED_IAM",
     "ChangeSetName": "pipeline-changeset",
     "ParameterOverrides": "{\"ProjectId\":\"testparams\", \"CodeDeployRole\":\"arn:aws:iam::182490143663:role/CodeStarWorker-testparams-CodeDeploy\", \"TestInput\":\"Test Git Override\"}",
-    "RoleArn": "arn:aws:iam::182490143663:role/CodeStarWorker-testparams-CloudFormation",
+    "RoleArn": "CodeStarWorker-testparams-CloudFormation",
     "StackName": "awscodestar-testparams-infrastructure",
     "TemplateConfiguration": "testparams-BuildArtifact::template-configuration.json",
     "TemplatePath": "testparams-BuildArtifact::template-export.yml"
