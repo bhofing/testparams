@@ -3,4 +3,15 @@
   {
     "awscodestar:projectArn":"arn:$PARTITION$:codestar:$AWS_REGION$:$ACCOUNT_ID$:project/$PROJECT_ID$"
   }
+  "configuration": 
+  {
+    "ActionMode": "CHANGE_SET_REPLACE",
+    "Capabilities": "CAPABILITY_NAMED_IAM",
+    "ChangeSetName": "pipeline-changeset",
+    "ParameterOverrides": "{\"InstanceType\": \"t2.small\",\"KeyName\": \"my-keypair\"}",
+    "RoleArn": "arn:aws:iam::182490143663:role/CodeStarWorker-testparams-CloudFormation",
+    "StackName": "awscodestar-testparams-infrastructure",
+    "TemplateConfiguration": "testparams-BuildArtifact::template-configuration.json",
+    "TemplatePath": "testparams-BuildArtifact::template-export.yml"
+  }
 }
